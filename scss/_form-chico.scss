@@ -1,0 +1,37 @@
+.formulario-chico{
+    width: 320px;
+    padding: 1rem;
+    background-color: #6096B4;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    label{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+    }
+    input{
+        border-radius: 5px;
+        border: transparent;
+        &:hover{
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+        &::placeholder{
+            color: rgba(0, 0, 0, 0.144);
+        }
+    }
+    button{
+        width: min-content;
+        border-radius: 5px;
+        border: transparent;
+        &:hover{
+            transform: scale(1.05);
+            transition: transform 0.2s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.454);
+
+        }
+    }
+    
+}
