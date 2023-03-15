@@ -52,7 +52,7 @@ label{
 }
 
 input:focus ~ label{
-    transform: translateY(-12px) scale(.8);
+    transform: translateY(-15px) scale(.85);
     transform-origin: top left;
     transition: .2s;
     
@@ -60,10 +60,9 @@ input:focus ~ label{
 }
 
 input:not(:placeholder-shown) ~ label {
-    transform: translateY(-14px) scale(.7);
+    transform: translateY(-15px) scale(.85);
     transform-origin: top left;
     color: blue;
-    font-weight: bold;
 }
 
 input:not(:placeholder-shown){
@@ -76,6 +75,8 @@ button{
     margin: 1rem auto 0 auto;
     border-radius: 5px;
     font-size: 1.1rem;
+    background-color: blue;
+    color: white;
 }
 
 button:hover{
@@ -85,4 +86,13 @@ button:hover{
 
 button:active{
     opacity: .8;
+}
+
+@media (max-width:450px) {
+    form{
+        padding: 2rem .5rem;
+    }
+    input{
+        font-size: 1rem;
+    }
 }
