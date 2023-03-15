@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-    <link rel="stylesheet" href="" />
-  </head>
+    <title>form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-  <body>
+<body>
     <form name="contact" method="POST" data-netlify="true">
+        <div class="form_group">
+            <input type="text" name="name" id="name" required placeholder=" " />
+            <label class="label_group" for="name">Nombre</label>
+        </div>
 
-        <input type="text" name="name" required placeholder=" "/>
-        <label>Nombre</label>
+        <div class="form_group">
+            <input type="number" id="telefono" name="telefono" required placeholder=" " />
+            <label for="telefono">Telefono</label>
+        </div>
 
-        <input type="number" name="telefono" required placeholder=" "/>
-        <label>Telefono</label>
+        <div class="form_group">
+            <input type="email" name="email" id="email" placeholder=" " />
+            <label for="email">Correo electronico</label>
+        </div>
 
-        <input type="email" name="email" placeholder=" "/>
-        <label>Correo electronico</label>
-
-        <textarea name="message" placeholder=" "></textarea>
-        <label>Motivo de contacto</label>
+        <div class="form_group">
+            <input type="text" name="message" id="message" placeholder=" " />
+            <label for="message">Motivo de contacto</label>
+        </div>
 
         <div data-netlify-recaptcha="true"></div>
 
-      <button type="submit">Enviar</button>
-
-
+        <button type="submit">Enviar</button>
     </form>
-  </body>
+</body>
+
 </html>
